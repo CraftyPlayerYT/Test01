@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Inscription — Test01</title>
+  <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+  <main>
+    <h1>Inscription</h1>
+    <form id="registerForm">
+      <label>Nom d'utilisateur<br><input name="username" required></label><br>
+      <label>Nom affiché<br><input name="displayName"></label><br>
+      <label>Téléphone (+country)<br><input name="phone" placeholder="+33123456789" required></label><br>
+      <label>Mot de passe<br><input type="password" name="password" required></label><br>
+      <button type="submit">S'inscrire</button>
+    </form>
+    <p>Après inscription, vous recevrez un code SMS pour vérifier votre numéro.</p>
+    <p>Déjà inscrit ? <a href="/login.html">Connexion</a></p>
+  </main>
+  <script src="/src/js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Chat — Test01</title>
+  <link rel="stylesheet" href="/src/css/style.css">
+  <style>
+    .app { display:flex; height: 90vh; }
+    .contacts { width: 250px; border-right: 1px solid #ddd; padding: 1rem; overflow:auto }
+    .messages { flex:1; padding:1rem; display:flex; flex-direction:column }
+    .msgs { flex:1; overflow:auto; margin-bottom:1rem }
+    .input { display:flex }
+    .input input { flex:1 }
+  </style>
+</head>
+<body>
+  <h1>Test01 — Chat</h1>
+  <div class="app">
+    <aside class="contacts">
+      <h3>Contacts</h3>
+      <ul id="contactsList"></ul>
+    </aside>
+    <section class="messages">
+      <div id="chatHeader"></div>
+      <div class="msgs" id="messages"></div>
+      <div class="input">
+        <input id="msgInput" placeholder="Écrire un message...">
+        <button id="sendBtn">Envoyer</button>
+      </div>
+    </section>
+  </div>
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <script src="/src/js/chat.js"></script>
+</body>
+</html>

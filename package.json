@@ -1,0 +1,23 @@
+{
+  "name": "test01-whatsapp",
+  "version": "0.1.0",
+  "description": "Prototype minimal d'une application de messagerie en temps réel (demo)",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "socket.io": "^4.7.2",
+    "sqlite3": "^5.1.6",
+    "dotenv": "^16.1.4",
+    "express-rate-limit": "^6.10.0",
+    "joi": "^17.9.2",
+    "twilio": "^4.10.0"
+  }
+}
